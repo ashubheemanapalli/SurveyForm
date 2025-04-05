@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post">
+      
+      <label id="name-label">Name
+        <input type="text" id="name" name="name" placeholder="Ente your name" required/>
+      </label>
+      <label id="email-label">Email
+        <input type="email" id="email" name="email" placeholder="Ente your email" required/>
+      </label>
+      <label id="number-label">Age
+        <input type="number" id="number" name="number" min="14" max="99" placeholder="Ente your age"/>
+      </label>
+
+      <legend>Do you Eat Dark Chocolate?</legend>
+        <label for="dark-chocolate"><input  type="radio" name="dark-chocolate" value="y" class="inline" checked /> Yes</label>
+        <label for="dark-chocolate"><input  type="radio" name="dark-chocolate" value="ay" class="inline" /> And Yes</label>
+      <label for="dropdown">Which of the below Dark chocolate types, do you like?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">90% of Cacao</option>
+          <option value="2">80% of Cacao</option>
+          <option value="3">70% of Cacao</option>
+          <option value="4">None</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <p>Select your hobbies:</p>
+        <label><input type="checkbox" name="hobbies" value="coffee">Coffee with Cacao</label>
+        <label><input type="checkbox" name="hobbies" value="movies"> Binge Watch with Cacao</label>
+        <label><input type="checkbox" name="hobbies" value="traveling"> Travelling with Cacao</label>
+      </fieldset>
+
+      <label for="comments">Additional Comments:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I like coding while eating dark chocolate..."></textarea>
+        </label>  
+        
+        <input type="submit" id="submit" type="submit" "value="Submit" /> 
+    </form>
+  </body>
+</html>
