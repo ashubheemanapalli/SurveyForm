@@ -40,6 +40,9 @@ body {
     background-color: transparent;
   }
   
+  option{
+    color: black;
+  }
   ::placeholder {
     color: #E9D8C2;
   }
